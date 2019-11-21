@@ -1,0 +1,518 @@
+    1  python --version
+    2  python3 --version
+    3  ansibl --version
+    4  ansible --version
+    5  mkdir ansi
+    6  cd ansi
+    7  mkdir inv
+    8  cd inv
+    9  mkdir dev
+   10  mkdir prod
+   11  mkdir test
+   12  sudo apt install tree
+   13  tree
+   14  cd ..
+   15  tree
+   16  cd
+   17  pwd
+   18  wget https://alta3.com/static/projects/ansible/deploy/max-teardown.sh
+   19  script
+   20  wget https://alta3.com/static/projects/ansible/deploy/indy-setup.sh
+   21  bash indy-setup.sh
+   22  ssh indy@10.10.2.2
+   23  cd ansi
+   24  cd inv
+   25  cd dev
+   26  ll
+   27  vim jones
+   28  ll
+   29  cd ..
+   30  ansible -m ping raiders -i ~ansi/inv/dev/jones
+   31  ansible -m ping raiders -i ~/ansi/inv/dev/jones
+   32  vim ~/ansi/inv/dev/jones
+   33  ansible -m ping raiders -i ~/ansi/inv/dev/jones
+   34  sudo apt sshpass -y
+   35  sudo apt install sshpass -y
+   36  vim ~/ansi/inv/dev/jones
+   37  ansible -m ping raiders -i ~/ansi/inv/dev/jones
+   38  ansible -m raw raiders -i ~/ansi/inv/dev/jones -a "apt install pythn3-pip"
+   39  ansible -m raw raiders -i ~/ansi/inv/dev/jones -a "apt install pythn3-pip" -b
+   40  ansible -m raw raiders -i ~/ansi/inv/dev/jones -a "apt install python3-pip" -b
+   41  ansible -m raw raiders -i ~/ansi/inv/dev/jones -a "apt install python3-pip" -b -y
+   42  ansible -m raw raiders -i ~/ansi/inv/dev/jones -a "apt install python3-pip -y" -b -vvv
+   43  ansible -m ping raiders -i ~/ansi/inv/dev/jones
+   44  ssy indy@10.10.2.2
+   45  ssh indy@10.10.2.2
+   46  cd ~/ansi
+   47  vim indyinstall01.yml
+   48  ll
+   49  cat indyinstall01.yml 
+   50  vim indyinstall01.yml
+   51  cat indyinstall01.yml 
+   52  ansible-playbook indyinstall01.yml -i inv/dev/jones
+   53  vim indyinstall01.yml
+   54  ansible-playbook indyinstall01.yml -i inv/dev/jones
+   55  vim indyinstall01.yml
+   56  ansible-playbook indyinstall01.yml -i inv/dev/jones
+   57  vim indyinstall01.yml
+   58  ansible-playbook indyinstall01.yml -i inv/dev/jones
+   59  cd ~
+   60  wget https://alta3.com/static/projects/ansible/deploy/max-teardown.sh
+   61  bash max-teardown.sh
+   62  wget https://alta3.com/static/projects/ansible/deploy/pexpress-setup.sh
+   63  bash pexpress-setup.sh 
+   64  ping -c 10.10.2.3
+   65  ping -c 1 10.10.2.3
+   66  ping -c 1 10.10.2.4
+   67  ping -c 1 10.10.2.5
+   68  ping -c 1 10.10.2.6
+   69  mkdir -p ~/ans/inv/dev/
+   70  vim ~/ans/inv/dev/hosts
+   71  ll
+   72  cd /ans/inv/dev
+   73  ll
+   74  cd ans/inv/dev
+   75  ll
+   76  cat hosts
+   77  vim ~/ans/playbook-fileshell.yml
+   78  pwd
+   79  cat ~/ans/playbook-fileshell.yml 
+   80  ansible-playbook ~/ans/playboo-fileshell.yml -i inv/dev/hosts
+   81  ansible-playbook ~/ans/playbook-fileshell.yml -i inv/dev/hosts
+   82  vim ~/ans/playbook-fileshell.yml
+   83  ansible-playbook ~/ans/playbook-fileshell.yml -i inv/dev/hosts
+   84  pwd
+   85  ll
+   86  cat hosts
+   87  mkdir inv
+   88  cd inv
+   89  mkdir dev
+   90  cp ~/ans/inv/dev/hosts .
+   91  ll
+   92  pwd
+   93  ansible-playbook ~/ans/playbook-fileshell.yml -i inv/dev/hosts
+   94  cat ~/ans/inv/dev/hosts
+   95  ll ~/ansi/inv/dev
+   96  ll ~/ansi/inv/dev/jones
+   97  cat ~/ansi/inv/dev/jones
+   98  ssh bender@10.10.2.3
+   99  ansible-playbook ~/ans/playbook-fileshell.yml -i inv/dev/hosts
+  100  ansible-playbook ~/ans/playbook-fileshell.yml -i ~/inv/dev/hosts
+  101  cd ..
+  102  ansible-playbook ~/ans/playbook-fileshell.yml -i inv/dev/hosts
+  103  pwd
+  104  vim ~/ans/playbook-fileshell.yml 
+  105  ansible-playbook ~/ans/playbook-fileshell.yml -i inv/dev/hosts
+  106  vim ~/ans/playbook-fileshell.yml 
+  107  ansible-playbook ~/ans/playbook-fileshell.yml -i inv/dev/hosts
+  108  vim ~/ans/playbook-fileshell.yml 
+  109  ansible-playbook ~/ans/playbook-fileshell.yml -i inv/dev/hosts
+  110  ansible-playbook ~/ans/playbook-fileshell.yml -i ~/inv/dev/hosts
+  111  cat ~/inv/dev/hosts
+  112  pwd
+  113  cd inv/dev
+  114  cd /inve/dev
+  115  cd /inv/dev
+  116  cd ~/inv/dev
+  117  ll
+  118  cd ans
+  119  ansible-playbook ~/ans/playbook-fileshell.yml -i ~/ans/inv/dev/hosts
+  120  ll
+  121  cp playbook-fileshell.yml playbook-fileshell2.yml
+  122  vi playbook-fileshell2.yml 
+  123  ansible-playbook ~/ans/playbook-fileshell2.yml -i ~/ans/inv/dev/hosts
+  124  ssh bender@10.10.2.3
+  125  ll
+  126  cat playbook-fileshell
+  127  cat playbook-fileshell.yml
+  128  ansible-playbook ~/ans/playbook-fileshell2.yml -i ~/ans/inv/dev/hosts
+  129  cd ..
+  130  ll
+  131  bash max-teardown.sh
+  132  cd ~
+  133  ll
+  134  bash pexpress-setup.sh 
+  135  pwd
+  136  cat ~/ans/inv/dev/hosts
+  137  mkdir ~/ans/files/
+  138  vi ~/ans/files/fry.txt
+  139  vi ~/.ansible.cfg
+  140  vi ~/ans/playbook-copy.yml
+  141  ansible-playbook ~/ans/playbook-copy.yml
+  142  ll
+  143  cd ans
+  144  ansible-playbook ~/ans/playbook-copy.yml
+  145  ll
+  146  ansible-playbook ~/playbook-copy.yml
+  147  pwd
+  148  ansible-playbook ~/ans/playbook-copy.yml
+  149  ll /home/student/ans/inv/dev/inv/dev
+  150  ll /home/student/ans/inv/dev/
+  151  cp /home/student/ans/inv/dev/hosts /home/student/ans/inv/dev/inv/dev/hosts
+  152  ll /home/student/ans/inv/dev/inv/dev/hosts
+  153  ansible-playbook ~/ans/playbook-copy.yml
+  154  cat ~/ansible.cfg
+  155  ll
+  156  cd ..
+  157  ll
+  158  cat .ansible.cfg
+  159  pwd
+  160  cd ans
+  161  ll
+  162  ssh bender@10.10.2.3
+  163  ssh fry@10.10.2.4
+  164  ssh zoidberg@10.10.2.5
+  165  ssh farnsworth@10.10.2.6
+  166  vi ~/ans/playbook-copy2.yml
+  167  ansible-playbook ~ans/playbook-copy2.yml
+  168  ll
+  169  ansible-playbook ans/playbook-copy2.yml
+  170  ansible-playbook ~/ans/playbook-copy2.yml
+  171  ll
+  172  vi playbook-copy2.yml
+  173  ansible-playbook ~/ans/playbook-copy2.yml
+  174  vi playbook-copy2.yml
+  175  cd ansi
+  176  cd ..
+  177  cd ansi
+  178  ll
+  179  mv indyinstall01.yml ~/ans
+  180  cd ~/ans
+  181  ll
+  182  ls
+  183  cd 
+  184  ll
+  185  ll ~/ansi
+  186  ls ~/ans/inv/dev
+  187  cat  ~/ans/inv/dev/hosts
+  188  cd ~/ans/inv/dev/hosts
+  189  vi ~/ans/inv/dev/hosts
+  190  cd ans
+  191  ll
+  192  tree
+  193  ansible -m setup.py planetexpress
+  194  ansible -m setup.py farnsworth > setupresults
+  195  less setupresults
+  196  whoami
+  197  ansibe config dump
+  198  ansible_config dump
+  199  ansible-config dump
+  200  sudo apt install cowsay
+  201  cowsay moo
+  202  /usr/games/cowsay moo
+  203  vi ~/.ansible.cfg
+  204  ansible-playbook playbook-copy.yml
+  205  vi ~/.ansible.cfg
+  206  ansible-playbook playbook-copy.yml
+  207  git add *
+  208  git init
+  209  git add *
+  210  git commit -m "End of day 1"
+  211  git config --global user.email "roel.bugayong@vzw.com"
+  212  git commit -m "End of day 1"
+  213  git config --global user.name "bugayro"
+  214  git commit -m "End of day 1"
+  215  git push https://github.com/bugayro/ansible master
+  216  pwd
+  217  clear
+  218  vi playbook-vars.yml
+  219  ansible-playbook playbook-vars.yml
+  220  vi  playbook-vars.yml
+  221  cd 
+  222  ll
+  223  vi .ansible.cfg
+  224  cd ans
+  225  ll
+  226  ansible-playbook playbook-vars.yml
+  227  cd inv/dev
+  228  vi hosts
+  229  cat ~/ans/ansible_vars.yml
+  230  vi hosts
+  231  cd
+  232  pwd
+  233  cd ans
+  234  ansible-playbook playbook-vars.yml
+  235  vi ~/.ansible.cfg
+  236  ansible-config dump
+  237  cd
+  238  ls 
+  239  bash max-teardown.sh
+  240  bash indy-setup.sh
+  241  cd ans
+  242  ansible-playbook playbook-vars.yml
+  243  cp playbook-vars.yml playbook-varsloops.yml
+  244  vi playbook-varsloops.yml 
+  245  ansible-playbook playbook-varsloops.yml
+  246  cp playbook-varsloops.yml playbook-varsfilesloops.yml
+  247  vi playbook-varsfilesloops.yml 
+  248  mkdir ~/ans/vars
+  249  cd vars
+  250  ll
+  251  cd..
+  252  cd ..
+  253  cat playbook-varsfilesloops.yml 
+  254  vi ~/ans/vars/indyusers.yml
+  255  ansible-playbook playbook-varsfilesloops.yml
+  256  vi  playbook-varsfilesloops.yml
+  257  vi vars/indyusers.yml 
+  258  ansible-playbook playbook-varsfilesloops.yml
+  259  vi vars/indyusers.yml 
+  260  ansible-playbook playbook-varsfilesloops.yml
+  261  ls
+  262  vi vars/moreindyusers.yml 
+  263  ll
+  264  cp playbook-varsfilesloops.yml playbook-varsfilesloops2.yml
+  265  vi playbook-varsfilesloops2.yml
+  266  ansible-playbook playbook-varsfilesloops2.yml
+  267  vi playbook-varsfilesloops2.yml
+  268  cp playbook-varsfilesloops.yml playbook-varsfilesloops2.yml
+  269  vi playbook-varsfilesloops2.yml
+  270  cd vars
+  271  ll
+  272  cat moreindyusers.yml 
+  273  cd ..
+  274  ll
+  275  vi playbook-varsfilesloops2.yml
+  276  ansible-playbook playbook-varsfilesloops2.yml
+  277  vi playbook-varsfilesloops2.yml
+  278  ansible-playbook playbook-varsfilesloops2.yml
+  279  cp playbook-varsfilesloops.yml playbook-varsfilesloops3.yml
+  280  vi playbook-varsfilesloops3.yml
+  281  ansible-playbook playbook-varsfilesloops3.yml
+  282  vi playbook-varsfilesloops3.yml
+  283  cd vars
+  284  ll
+  285  cp moreindyusers.yml moreindyusers3.yml
+  286  vi moreindyusers3.yml
+  287  cd ..
+  288  vi playbook-varsfilesloops3.yml
+  289  ansible-playbook playbook-varsfilesloops3.yml
+  290  vi playbook-varsfilesloops3.yml
+  291  vi playbook-varsfilesloops2.yml
+  292  cp playbook-varsfilesloops.yml playbook-varsfilesloops-2.yml
+  293  vi playbook-varsfilesloops-2.yml 
+  294  ansible-playbook playbook-varsfilesloops-2.yml
+  295  vi playbook-varsfilesloops3.yml
+  296  git add *
+  297  git status
+  298  git commit -m "going to lunch Day 2"
+  299  git log
+  300  git config --global user.email "roel.bugayong@vzw.com"
+  301  git config --global user.name "bugayro"
+  302  git push https://github.com/bugayro/ansible master
+  303  git log
+  304  ls
+  305  cd ..
+  306  ll
+  307  bash max-teardown.sh
+  308  bash pexpress-setup.sh 
+  309  vi ~/ans/playbook-apt.yml
+  310  ansible-playbook playbook-apt.yml
+  311  cd ans
+  312  ansible-playbook playbook-apt.yml
+  313  ssh fry@10.10.2.4
+  314  ll
+  315  cp playbook-apt.yml playbook-apt2.yml
+  316  vi playbook-apt2.yml
+  317  ansible-playbook playbook-apt2.yml
+  318  ssh zoidberg@10.10.2.5
+  319  cp playbook-apt.yml playbook-apt3.yml
+  320  vi playbook-apt3.yml
+  321  ansible-playbook playbook-apt3.yml
+  322  cd ..
+  323  bash max-teardown.sh
+  324  bash pexpress-setup.sh 
+  325  cd ans
+  326  vi ~/ans/playbook-yum.yml
+  327  ansible-playbook playbook-yum.yml
+  328  vi ~/ans/playbook-yum.yml
+  329  ansible-playbook playbook-yum.yml
+  330  ssh farnsworth@10.10.2.6
+  331  cp playbook-yum.yml playbook-yum2.yml
+  332  vi playbook-yum2.yml
+  333  ansible-playbook playbook-yum2.yml
+  334  cp playbook-yum2.yml playbook-yum3.yml
+  335  vi playbook-yum3.yml
+  336  ansible-playbook playbook-yum3.yml
+  337  ssh farnsworth@10.10.2.6
+  338  vi playbook-yum3.yml
+  339  ssh farnsworth@10.10.2.6
+  340  ssh bender@10.10.2.3
+  341  ssh fry@10.10.2.4
+  342  ansible-playbook playbook-yum3.yml
+  343  ssh farnsworth@10.10.2.6
+  344  vi playbook-yum3.yml
+  345  ansible-playbook playbook-yum3.yml
+  346  vi playbook-yum3.yml
+  347  ansible-playbook playbook-yum3.yml
+  348  ssh farnsworth@10.10.2.6
+  349  vi playbook-yum3.yml
+  350  ansible-playbook playbook-yum3.yml
+  351  vi playbook-yum3.yml
+  352  ansible-playbook playbook-yum3.yml
+  353  vi playbook-yum3.yml
+  354  ansible-playbook playbook-yum3.yml
+  355  vi playbook-yum3.yml
+  356  ansible-playbook playbook-yum3.yml
+  357  vi playbook-yum3.yml
+  358  ansible-playbook playbook-yum3.yml -vvvv
+  359  vi playbook-yum3.yml
+  360  ansible-playbook playbook-yum3.yml 
+  361  vi playbook-yum3.yml
+  362  ansible-playbook playbook-yum3.yml 
+  363  vi playbook-yum3.yml
+  364  ansible-playbook playbook-yum3.yml 
+  365  ssh farnsworth@10.10.2.6
+  366  mkdir templates
+  367  ll
+  368  cd sudo apt install tree
+  369  sudo apt install tree
+  370  tree
+  371  vi templates/ship.cfg.j2
+  372  vi playbook-template01.yml
+  373  ansible-playbook playbook-template01.yml 
+  374  vi playbook-template01.yml
+  375  ansible-playbook playbook-template01.yml 
+  376  ss farnswort@10.10.2.6
+  377  ss farnsworth@10.10.2.6
+  378  ssh farnsworth@10.10.2.6
+  379  vi templates/cargo_manifest.txt.j2
+  380  vi templates/navigation_charts.cfg.j2
+  381  vi templates/orders.txt.j2
+  382  vi crewauto.yml
+  383  cat crewauto.yml 
+  384  vi ~ans/vars/vars.yml
+  385  cd vars
+  386  ll
+  387  vi vars.yml
+  388  ansible-playbook crewauto.yml
+  389  cd ..
+  390  ansible-playbook crewauto.yml
+  391  ansible-playbook crewauto.yml --tags="cargo"
+  392  ssh bender@10.10.2.3
+  393  ansible-playbook crewauto.yml --tags="ship_prep"
+  394  ansible-playbook crewauto.yml --tags="nav"
+  395  ansible-playbook crewauto.yml --tags="orders"
+  396  git add *
+  397  git comit -m "End of Day 2"
+  398  git commit -m "End of Day 2"
+  399  git log
+  400  git push https://github.com/bugayro/ansible master
+  401  ll
+  402  git status
+  403  cd ans
+  404  vi playbook_varpractice.yml
+  405  ansible-playbook playbook_varpractice.yml
+  406  vi playbook_varpractice.yml
+  407  ansible-playbook playbook_varpractice.yml
+  408  vi playbook_varpractice.yml
+  409  ansible-playbook playbook_varpractice.yml
+  410  ll
+  411  cat playbook-varsloops.yml
+  412  vi playbook_varpractice2.yml
+  413  ansible-playbook playbook_varpractice2.yml
+  414  vi playbook_varpractice2.yml
+  415  ll
+  416  cat laybook-varsfilesloops.yml
+  417* 
+  418  ll
+  419  cat playbook-varsfilesloops2.yml
+  420  vi playbook_varpractice2.yml
+  421  ansible-playbook playbook_varpractice2.yml
+  422  vi playbook_varpractice2.yml
+  423  ansible-playbook playbook_varpractice2.yml
+  424  vi vars/astros.yml
+  425  vi playbook-varsastros.yml
+  426  vi vars/astros.yml
+  427  vi playbook-varsastros.yml
+  428  ansible-playbook playbook-varsastros.yml
+  429  vi playbook-varsastros.yml
+  430  cp playbook-varsastros.yml playbook-apiastros.yml
+  431  vi vars/astros.yml
+  432  ansible-playbook playbook-varsastros.yml
+  433  vi playbook-varsastros.yml
+  434  vi vars/astros.yml
+  435  vi playbook-apiastros.yml
+  436  ansible-playbook playbook-apiastros.yml
+  437  vi playbook-apiastros.yml
+  438  ansible-playbook playbook-apiastros.yml
+  439  vi playbook-varsastros.yml
+  440  ansible-playbook playbook-varsastros.yml
+  441  vi vars/astros.yml
+  442  ansible-playbook playbook-varsastros.yml
+  443  vi vars/astros.yml
+  444  ansible-playbook playbook-varsastros.yml
+  445  vi playbook-varsastros.yml
+  446  vi vars/astros.yml
+  447  ansible-playbook playbook-varsastros.yml
+  448  vi vars/astros.yml
+  449  vi playbook_varsastros.yml
+  450  ansible-playbook playbook_varsastros.yml
+  451  cd vars
+  452  ll
+  453  cat indyusers.yml 
+  454  cat vars
+  455  cat vars.yml 
+  456  cat astros.yml 
+  457  cd ..
+  458  ll
+  459  ansible-playbook playbook_varsastros.yml
+  460  ansible-playbook playbook_apiastros.yml
+  461  ansible-playbook playbook-apiastros.yml
+  462  ll
+  463  cd vars
+  464  ll
+  465  cat indyusers.yml 
+  466  cp indyusers.yml astros2.yml
+  467  vi astros2.yml 
+  468  cat astros.yml
+  469  vi astros2.yml 
+  470  cd ..
+  471  vi playbook_varsastros.yml
+  472  ansible-playbook playbook_varsastros.yml
+  473  vi playbook_varsastros.yml
+  474  ansible-playbook playbook_varsastros.yml
+  475  vi playbook-varsastros.yml
+  476  ansible-playbook playbook-varsastros.yml
+  477  vi playbook-varsastros.yml
+  478  cd vars
+  479* 
+  480  cd ..
+  481  ansible-playbook playbook-varsastros.yml
+  482  vi playbook-varsastros.yml 
+  483  cd vars
+  484  ll
+  485  cat astros2.yml
+  486  cat astros.yml
+  487  vi astros2.yml 
+  488  cd ..
+  489  ansible-playbook playbook-varsastros.yml
+  490  vi playbook-varsastros.yml 
+  491  ansible-playbook playbook-varsastros.yml
+  492  vi playbook_varsastros.yml
+  493  vi playbook-varsastros.yml
+  494  ansible-playbook playbook-varsastros.yml
+  495  vi playbook-varsastros.yml
+  496  ansible-playbook playbook-varsastros.yml --tag wip
+  497  ansible-playbook playbook-varsastros.yml
+  498  vi playbook-varsastros.yml
+  499  ansible-playbook playbook-varsastros.yml
+  500  vi linechange.yml
+  501  ansible-playbook linechange.yml
+  502  vi linechange.yml
+  503  cd ..
+  504  ll
+  505  bash max-teardown.sh
+  506  bash pexpress-setup.sh 
+  507  cd ans
+  508  ansible-playbook linechange.yml
+  509  cat linechange.yml 
+  510  cp linechange.yml replace.yml
+  511  vi replace.yml 
+  512  ansible-playbook replace.yml
+  513  ssh bender@10.10.2.3
+  514  git add *
+  515  git commit -m "End of Day 3"
+  516  git push https://github.com/bugayro/ansible master
+  517  history
+  518  history > setupresultsDay3

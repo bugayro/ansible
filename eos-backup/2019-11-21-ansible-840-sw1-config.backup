@@ -1,0 +1,48 @@
+! Command: show running-config
+! device: ansible-840-sw1 (vEOS, EOS-4.22.0F)
+!
+! boot system flash:/vEOS-lab.swi
+!
+transceiver qsfp default-mode 4x10G
+!
+hostname ansible-840-sw1
+!
+spanning-tree mode mstp
+!
+no aaa root
+!
+username admin role network-admin secret sha512 $6$JJ0fPSiZpE1wEMpl$PBuglBjUAeiYFoJ3XLu8X58GVycBORlL7Qf2Hn9WU3VgU6aJ.RUuNg4X5bD8w9YyNpT5nyDuiy9H6CYwEb.930
+!
+interface Ethernet1
+!
+interface Ethernet2
+!
+interface Ethernet3
+!
+interface Ethernet4
+!
+interface Ethernet5
+!
+interface Ethernet6
+!
+interface Ethernet7
+!
+interface Ethernet8
+!
+interface Ethernet9
+!
+interface Ethernet10
+!
+interface Ethernet11
+!
+interface Ethernet12
+!
+interface Ethernet13
+!
+interface Management1
+   ip address dhcp
+   dhcp client accept default-route
+!
+no ip routing
+!
+end
